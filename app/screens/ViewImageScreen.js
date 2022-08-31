@@ -1,9 +1,7 @@
 import React from "react";
-import { View, Image, Platform, StatusBar, Dimensions } from "react-native";
+import { View, Image } from "react-native";
 
 export default function App() {
-    const screenSize = Dimensions.get("screen");
-
     return (
         <View
             style={{
@@ -13,8 +11,6 @@ export default function App() {
                 justifyContent: "space-between",
                 paddingHorizontal: 30,
                 paddingVertical: 10,
-                paddingTop:
-                    Platform.OS === "android" ? StatusBar.currentHeight : 0,
             }}
         >
             <View
@@ -35,15 +31,11 @@ export default function App() {
             <Image
                 source={require("./assets/chair.jpg")}
                 style={{
-                    resizeMode: "contain",
                     position: "absolute",
-                    flex: 1,
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    top: screenSize.height / 5,
-                    width: "100%",
-                    height: "100%",
+                    top: 100,
+                    resizeMode: "contain",
+                    width: "90%",
+                    height: "50%",
                 }}
             />
         </View>

@@ -1,0 +1,12 @@
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <rect rx="5" id="svg_1" height="175" width="50" y="50" x="100" stroke="#000" fill="#e1341e"/>
+  <rect rx="5" id="svg_2" height="125" width="50" y="100" x="40" stroke="#000" fill="#961ee1"/>
+  <rect rx="5" id="svg_3" height="100" width="50" y="125" x="160" stroke="#000" fill="#6ae11e"/>
+  <text font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="monospace" font-size="62" id="svg_4" y="200" x="47.5" stroke="#000" fill="#ffffff">T</text>
+  <text font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="monospace" font-size="62" id="svg_5" y="200" x="168" stroke="#000" fill="#ffffff">I</text>
+  <text font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="monospace" font-size="62" id="svg_6" y="200" x="108" stroke="#000" fill="#ffffff">R</text>
+ </g>
+</svg>
