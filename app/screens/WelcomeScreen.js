@@ -1,59 +1,50 @@
 import React from "react";
-import { View, Image, Text, ImageBackground } from "react-native";
+import { View, Image, Text, ImageBackground, StyleSheet } from "react-native";
 
 export default function App() {
-    console.log(require("./assets/background.jpg"));
+    console.log(require("../assets/background.jpg"));
 
     return (
-        <View
-            style={{
-                flex: 1,
-                flexDirection: "column",
-                justifyContent: "flex-end",
-            }}
+        <ImageBackground
+            source={require("../assets/background.jpg")}
+            style={styles.background}
         >
-            <ImageBackground
-                source={require("./assets/background.jpg")}
-                style={{
-                    height: "100%",
-                    width: "100%",
-                    flexDirection: "column",
-                    justifyContent: "flex-end",
-                    alignItems: "center",
-                }}
-            >
-                <View
-                    style={{
-                        position: "absolute",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        top: 100,
-                    }}
-                >
-                    <Image
-                        source={require("./assets/logo-red.png")}
-                        style={{
-                            width: 100,
-                            height: 100,
-                        }}
-                    />
-                    <Text>Sell What You Don't Need</Text>
-                </View>
-                <View
-                    style={{
-                        backgroundColor: "#4ecdc4",
-                        width: "100%",
-                        height: 50,
-                    }}
-                ></View>
-                <View
-                    style={{
-                        backgroundColor: "#fc5c65",
-                        width: "100%",
-                        height: 50,
-                    }}
-                ></View>
-            </ImageBackground>
-        </View>
+            <View style={styles.logoContainer}>
+                <Image
+                    source={require("../assets/logo-red.png")}
+                    style={styles.logo}
+                />
+                <Text>Sell What You Don't Need</Text>
+            </View>
+            <View style={styles.loginButton}></View>
+            <View style={styles.registerButton}></View>
+        </ImageBackground>
     );
 }
+
+const styles = StyleSheet.create({
+    background: {
+        flex: 1,
+        justifyContent: "flex-end",
+        alignItems: "center",
+    },
+    loginButton: {
+        width: "100%",
+        backgroundColor: "#fc5c65",
+        height: 70,
+    },
+    registerButton: {
+        width: "100%",
+        backgroundColor: "#4ecdc4",
+        height: 70,
+    },
+    logoContainer: {
+        position: "absolute",
+        top: 70,
+        alignItems: "center",
+    },
+    logo: {
+        height: 100,
+        width: 100,
+    },
+});
