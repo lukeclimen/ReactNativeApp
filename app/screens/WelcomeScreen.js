@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Image, Text, ImageBackground, StyleSheet } from "react-native";
+import colours from "../config/colours";
 
 export default function App() {
     console.log(require("../assets/background.jpg"));
@@ -30,12 +31,12 @@ const styles = StyleSheet.create({
     },
     loginButton: {
         width: "100%",
-        backgroundColor: "#fc5c65",
+        backgroundColor: colours.primary,
         height: 70,
     },
     registerButton: {
         width: "100%",
-        backgroundColor: "#4ecdc4",
+        backgroundColor: colours.secondary,
         height: 70,
     },
     logoContainer: {
