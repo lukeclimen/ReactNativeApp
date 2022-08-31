@@ -1,12 +1,5 @@
 import React from "react";
-import {
-    View,
-    Image,
-    Platform,
-    StatusBar,
-    Dimensions,
-    StyleSheet,
-} from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 
 export default function App() {
     return (
@@ -34,11 +27,6 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: "#000",
         flex: 1,
-        // flexDirection: "row",
-        // justifyContent: "space-between",
-        // paddingHorizontal: 30,
-        // paddingVertical: 10,
-        // paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     },
     deleteIcon: {
         position: "absolute",
