@@ -18,14 +18,19 @@ export default function App() {
                 />
                 <Text>Sell What You Don't Need</Text>
             </View>
-            <AppButton
-                title="Login"
-                onPress={() => console.log("Login Pressed")}
-            />
-            <AppButton
-                title="Register"
-                onPress={() => console.log("Register Pressed")}
-            />
+            <View style={styles.buttonContainer}>
+                <AppButton
+                    title="Login"
+                    onPress={() => console.log("Login Pressed")}
+                />
+            </View>
+            <View style={styles.buttonContainer}>
+                <AppButton
+                    title="Register"
+                    onPress={() => console.log("Register Pressed")}
+                    colour="secondary"
+                />
+            </View>
         </ImageBackground>
     );
 }
@@ -36,11 +41,9 @@ const styles = StyleSheet.create({
         justifyContent: "flex-end",
         alignItems: "center",
     },
-    loginButton: {
-        backgroundColor: colours.primary,
-    },
-    registerButton: {
-        backgroundColor: colours.secondary,
+    buttonContainer: {
+        paddingHorizontal: 20,
+        width: "100%",
     },
     logoContainer: {
         position: "absolute",
