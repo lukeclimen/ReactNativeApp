@@ -3,7 +3,7 @@ import { View, Image, Text, ImageBackground, StyleSheet } from "react-native";
 import colours from "../config/colours";
 import AppButton from "../components/AppButton";
 
-export default function App() {
+function WelcomeScreen(props) {
     console.log(require("../assets/background.jpg"));
 
     return (
@@ -61,3 +61,5 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
     },
 });
+
+export default WelcomeScreen;
