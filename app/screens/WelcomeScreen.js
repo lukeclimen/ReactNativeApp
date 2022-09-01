@@ -10,13 +10,14 @@ export default function App() {
         <ImageBackground
             source={require("../assets/background.jpg")}
             style={styles.background}
+            blurRadius={5}
         >
             <View style={styles.logoContainer}>
                 <Image
                     source={require("../assets/logo-red.png")}
                     style={styles.logo}
                 />
-                <Text>Sell What You Don't Need</Text>
+                <Text style={styles.tagLine}>Sell What You Don't Need</Text>
             </View>
             <View style={styles.buttonContainer}>
                 <AppButton
@@ -53,5 +54,10 @@ const styles = StyleSheet.create({
     logo: {
         height: 100,
         width: 100,
+    },
+    tagLine: {
+        fontSize: 25,
+        fontWeight: "600",
+        paddingVertical: 20,
     },
 });
